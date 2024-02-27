@@ -1,10 +1,9 @@
-// Importações
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Navigation from "@components/navigation";
 import Head from "next/head";
 import styles from "@components/pagestyles/projects.module.css";
-import Image from 'next/image'
+import Image from "next/image";
 
 // URL da API
 const API_URL = "https://api.github.com/users/LuanTMoura/repos?per_page=100";
@@ -31,15 +30,15 @@ export default function Projects() {
     fetch(API_URL)
       .then((res) => res.json())
       .then((data) => {
-        setRepos(data.filter((repo) => repo.description));
-        setTotalPages(Math.ceil(data.filter((repo) => repo.description).length / perPage));
+        setRepos(data.filter((repo: { description: any; }) => repo.description));
+        setTotalPages(Math.ceil(data.filter((repo: { description: any; }) => repo.description).length / perPage));
       });
   }, []);
 
   // ## Função para trocar página
 
   // Altera a página atual
-  const handlePageChange = (pageNumber) => {
+  const handlePageChange = (pageNumber: React.SetStateAction<number>) => {
     setCurrentPage(pageNumber);
   };
 
@@ -70,7 +69,7 @@ export default function Projects() {
     const start = (currentPage - 1) * perPage;
     const end = start + perPage;
     return repos.slice(start, end).map((repo) => (
-      <li key={repo.id} className={styles.repoItem}>
+      <li key={repo.name} className={styles.repoItem}>
         <h3 className={styles.title}>
           <Link href={repo.html_url}>{repo.name}</Link>
         </h3>
@@ -89,15 +88,15 @@ export default function Projects() {
         <title>Luan Tobias - Projects</title>
       </Head>
       {/* ## Navegação */}
-
       <Navigation />
       <div>
-        <Image 
-        width={480}
-        height={220}
-        src="/imgs/repositories.png"
-        alt={''}/>
-        </div>
+        <Image
+          width={480}
+          height={220}
+          src="/imgs/repositories.png"
+          alt="Imagem de repositórios"
+        />
+      </div>
       {/* ## Seção de repositórios */}
       {repos.length === 0 && (
         <div className={styles.loading}>
