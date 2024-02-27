@@ -12,7 +12,7 @@ export default function Projects() {
   // ## Estados
 
   // Armazena a lista de repositórios
-  const [repos, setRepos] = useState([]);
+  const [repos, setRepos] = useState<any[]>([]);
 
   // Armazena a página atual
   const [currentPage, setCurrentPage] = useState(1);
@@ -29,9 +29,10 @@ export default function Projects() {
   useEffect(() => {
     fetch(API_URL)
       .then((res) => res.json())
-      .then((data) => {
-        setRepos(data.filter((repo: { description: any; }) => repo.description));
-        setTotalPages(Math.ceil(data.filter((repo: { description: any; }) => repo.description).length / perPage));
+      .then((data: any[]) => {
+        // Explicitamente definir o tipo de data como array de objetos
+        setRepos(data.filter((repo: { description: string }) => repo.description)); // Definir o tipo de `repo`
+        setTotalPages(Math.ceil(data.filter((repo: { description: string }) => repo.description).length / perPage));
       });
   }, []);
 
@@ -69,7 +70,7 @@ export default function Projects() {
     const start = (currentPage - 1) * perPage;
     const end = start + perPage;
     return repos.slice(start, end).map((repo) => (
-      <li key={repo.name} className={styles.repoItem}>
+      <li key={repo.id} className={styles.repoItem}>
         <h3 className={styles.title}>
           <Link href={repo.html_url}>{repo.name}</Link>
         </h3>
@@ -119,4 +120,4 @@ export default function Projects() {
       )}
     </>
   );
-};
+}
