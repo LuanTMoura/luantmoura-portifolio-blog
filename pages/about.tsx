@@ -13,7 +13,7 @@ export default function About() {
     </Head>
     <Navigation/>
     <div>
-        <Image 
+        <Image className={styles.imgconfig}
         width={480}
         height={400}
         src="/imgs/me.jpeg"

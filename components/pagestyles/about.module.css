@@ -1,10 +1,28 @@
+@media screen and (min-width: 480px) and (min-height: 767px) {
+    .titleconfig{
+        color: #ffffff;
+        font-family: 'Open Sans Condensed', sans-serif;
+        padding-top: 1em 0;
+        display: flex;
+        margin-left: 2.2rem;
+        margin-right: 2rem;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 412px) and (min-height: 915px) {
 .titleconfig{
     color: #ffffff;
+    font-size: 1.2rem;
     font-family: 'Open Sans Condensed', sans-serif;
-    padding-top: 1em 0;
+    padding-top: 0.5rem;
+    padding: 0.5rem;
     display: flex;
-    margin-left: 2.2rem;
-    margin-right: 2rem;
+    margin-left: 1.7rem;
     text-align: left;
-    word-break: break-all;
+}
+.imgconfig{
+    width: 412px;
+    height: 345px;
+  }
 }

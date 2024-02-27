@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Navigation from "@components/navigation";
 import Head from "next/head";
-import styles from "@components/pagestyles/projects.module.css";
+import styles from "@components/pagestyles/repositories.module.css";
 import Image from "next/image";
 
 // URL da API
 const API_URL = "https://api.github.com/users/LuanTMoura/repos?per_page=100";
 
-export default function Projects() {
+export default function Repositories() {
   // ## Estados
 
   // Armazena a lista de repositórios
@@ -91,7 +91,7 @@ export default function Projects() {
       {/* ## Navegação */}
       <Navigation />
       <div>
-        <Image
+        <Image className={styles.imgconfig}
           width={480}
           height={220}
           src="/imgs/repositories.png"
