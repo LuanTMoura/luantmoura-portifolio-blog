@@ -1,0 +1,23 @@
+.list {
+    list-style: none;
+    padding: 1em 0;
+    display: flex;
+    margin-left: 2rem;
+}
+
+.list > * + * {
+    padding: 1em 1;
+    margin-left: 1rem;
+}
+
+.navAnchor{
+    font-size: medium;
+    text-shadow: 1px 2px 3px rgb(109, 109, 109);
+    text-decoration: underline 2px;
+}
+    
+.navAnchor:hover,
+.navAnchor:focus {
+    text-decoration: underline dotted 2px;
+
+}

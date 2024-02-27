@@ -1,0 +1,10 @@
+.titleconfig{
+    color: #ffffff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding-top: 1em 0;
+    display: flex;
+    margin-left: 2.2rem;
+    margin-right: 2rem;
+    text-align: left;
+    word-break: break-all;
+}
