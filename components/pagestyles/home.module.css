@@ -144,7 +144,7 @@
 }
 
 /*Galaxy A32*/
-@media screen and (min-width: 412px) and (min-height: 900px){
+@media screen and (min-width: 412px){
   /* Estilos compartilhados para os componentes Home e Projects */
   .ul {
       list-style-type: none;
