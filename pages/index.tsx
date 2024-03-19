@@ -3,12 +3,11 @@ import Link from "next/link";
 import Header from "@components/header";
 import Navigation from "@components/navigation";
 
-import styles from '@components/pagestyles/home.module.css';
-
 import { getPostList } from "@shared/util"; // Assumindo que getPostList existe em um utilitário compartilhado
 import { InferGetStaticPropsType } from "next";
 import { Key } from "react";
-import Image from 'next/image'
+import styles from '@components/pagestyles/home.module.css';
+
 
 type PostList = string[];
 
@@ -21,7 +20,12 @@ function Home({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
       </Head>
       <main>
         <Navigation /> {/* Renderiza a navegação do site */}
-        <Header /> {/* Renderiza o cabeçalho do site */}
+        <img className={styles.imgconfig}
+          width={styles.imgconfig}
+          height={styles.imgconfig}
+          src="/imgs/home.png"
+          alt="Imagem da home"
+        />
 
         {/* Renderiza a lista de posts se houver posts disponíveis */}
         {posts.length > 0 && (

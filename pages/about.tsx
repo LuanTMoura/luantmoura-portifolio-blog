@@ -15,7 +15,7 @@ export default function About() {
     <div>
         <Image className={styles.imgconfig}
         width={480}
-        height={400}
+        height={480}
         src="/imgs/me.jpeg"
         alt={''}/>
         </div>

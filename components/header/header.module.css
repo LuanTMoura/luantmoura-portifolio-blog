@@ -3,13 +3,30 @@
     place-items: center;
 }
 
-.imgconfig{
-    width: 412px;
-    height: 165px;
-}
 
 .title {
     line-height: 1.15;
     font-size: 4rem;
     text-align: center;
+}
+
+
+.imgconfig{
+    width: 480px;
+    height: 220px;
+}
+
+
+@media screen and (min-width: 412px){
+    .imgconfig{
+        width: 412px;
+        height: 165px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .imgconfig{
+        width: 768px; /* Ajustar largura conforme necessário */
+        height: 307px;
+    }
 }

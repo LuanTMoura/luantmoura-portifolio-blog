@@ -91,9 +91,9 @@ export default function Repositories() {
       {/* ## Navegação */}
       <Navigation />
       <div>
-        <Image className={styles.imgconfig}
-          width={480}
-          height={220}
+      <img className={styles.imgconfig}
+          width={styles.imgconfig}
+          height={styles.imgconfig}
           src="/imgs/repositories.png"
           alt="Imagem de repositórios"
         />
