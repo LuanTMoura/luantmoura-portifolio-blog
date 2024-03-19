@@ -74,7 +74,7 @@
 }
 }
 
-@media screen and (min-width: 412px) and (min-height: 915px) {
+@media screen and (min-width: 412px) {
   .titleconfig{
     color: #ffffff;
     font-family: 'Open Sans Condensed', sans-serif;
