@@ -1,4 +1,44 @@
 /*Main cellphones: 480x767*/
+@media screen and (min-width: 480px) and (min-height: 797px){
+
+  .titleconfig{
+      color: #ffffff;
+      font-family: 'Open Sans Condensed', sans-serif;
+      padding-top: 1em 0;
+      display: flex;
+      margin-left: 1rem;
+      text-align: left;
+      word-break: break-all;
+  }
+  
+  .hr {
+    border-top: 2px solid #bbb;
+    padding-bottom: 0.50rem;
+  }
+  
+  .hrtop {
+      border-top: 2px solid #bbb;
+      padding-inline-start: 0.50rem;
+    }
+  
+  .textconfig {
+   color: whitesmoke;
+   font-size: 25px;
+   font-family: 'Inder', sans-serif;
+   padding: 0.25cm;
+  }
+  
+  .blankspace{
+  padding-top: 0.10cm;
+  }
+  
+  .iconconfig{
+    color: white;
+    size: 50px;
+    margin-left: 1rem;
+  }
+}
+
 @media screen and (min-width: 480px){
 
   .titleconfig{
@@ -19,6 +59,47 @@
   .hrtop {
       border-top: 2px solid #bbb;
       padding-inline-start: 0.50rem;
+    }
+  
+  .textconfig {
+   color: whitesmoke;
+   font-size: 25px;
+   font-family: 'Inder', sans-serif;
+   padding: 0.25cm;
+  }
+  
+  .blankspace{
+  padding-top: 0.10cm;
+  }
+  
+  .iconconfig{
+    color: white;
+    size: 50px;
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 412px){
+
+  .titleconfig{
+      color: #ffffff;
+      font-family: 'Open Sans Condensed', sans-serif;
+      padding-top: 1em 0;
+      display: flex;
+      margin-left: 1rem;
+      text-align: left;
+      word-break: break-all;
+  }
+  
+  .hr {
+    border-top: 2px solid #bbb;
+    padding-bottom: 0.50rem;
+    width: 30rem;
+  }
+  
+  .hrtop {
+      border-top: 2px solid #bbb;
+      padding-inline-start: 0.50rem;
+      width: 30rem;
     }
   
   .textconfig {
