@@ -1,7 +1,7 @@
 import styles from '@components/post/posts.module.css'
 import Image from 'next/image'
 
-const Hello = () => (
+const Hello2 = () => (
     <>
     <article>
 
@@ -13,9 +13,9 @@ const Hello = () => (
         </h1>
         <div>
         <div className={styles.hr}></div>
-        <Image 
-        width={480}
-        height={220}
+        <img className={styles.imgconfig} 
+        width={styles.imgconfig}
+        height={styles.imgconfig}
         src="/post/hello-there/teste.jpeg"
         alt={''}/>
         </div>        
@@ -24,4 +24,4 @@ const Hello = () => (
     </>
 )
 
-export default Hello
+export default Hello2

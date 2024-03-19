@@ -21,3 +21,57 @@
     text-decoration: underline dotted 2px;
 
 }
+
+/*Tablets*/
+@media screen and (min-width: 768px) {
+    .list {
+        list-style: none;
+        padding: 1em 0;
+        display: flex;
+        margin-left: 2rem;
+    }
+    
+    .list > * + * {
+        padding: 1em 1;
+        margin-left: 1rem;
+    }
+    
+    .navAnchor{
+        font-size: x-large;
+        text-shadow: 1px 2px 3px rgb(109, 109, 109);
+        text-decoration: underline 2px;
+    }
+        
+    .navAnchor:hover,
+    .navAnchor:focus {
+        font-size: large;
+        text-decoration: underline dotted 2px;
+    }
+}
+
+/*My device*/
+@media screen and (min-width: 1283px) {
+    .list {
+        list-style: none;
+        padding: 1em 0;
+        display: flex;
+        margin-left: 50rem;
+    }
+    
+    .list > * + * {
+        padding: 1em 1;
+        margin-left: 1rem;
+    }
+    
+    .navAnchor{
+        font-size: x-large;
+        text-shadow: 1px 2px 3px rgb(109, 109, 109);
+        text-decoration: underline 2px;
+    }
+        
+    .navAnchor:hover,
+    .navAnchor:focus {
+        font-size: large;
+        text-decoration: underline dotted 2px;
+    }
+}
