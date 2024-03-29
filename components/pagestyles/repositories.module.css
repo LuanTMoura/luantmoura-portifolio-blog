@@ -418,13 +418,12 @@
   }
   
   .imgconfig{
-    width: 1900px;
+    width: 1283px;
     height: 580px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-}
+  }
   
   .title {
     font-weight: bold;

@@ -184,6 +184,13 @@ padding-top: 0.10cm;
 
 /*My Device*/
 @media screen and (min-width: 1283px) {
+  .imgconfig{
+    width: 1283px;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .titleconfig{
       color: #ffffff;
       font-family: 'Open Sans Condensed', sans-serif;
