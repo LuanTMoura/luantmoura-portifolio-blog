@@ -185,7 +185,7 @@ padding-top: 0.10cm;
 /*My Device*/
 @media screen and (min-width: 1283px) {
   .imgconfig{
-    width: 1283px;
+    width: 1200px;
     height: 580px;
     display: flex;
     justify-content: center;
@@ -204,13 +204,13 @@ padding-top: 0.10cm;
   .hr {
     border-top: 2px solid #bbb;
     padding-bottom: 0.50rem;
-    width: 120rem;
+    width: 118.7rem;
   }
   
   .hrtop {
       border-top: 2px solid #bbb;
       padding-inline-start: 0.50rem;
-      width: 120rem;
+      width: 118.7rem;
     }
   
   .textconfig {
@@ -218,8 +218,9 @@ padding-top: 0.10cm;
    font-size: 25px;
    font-family: 'Inder', sans-serif;
    padding: 0.25cm;
-   padding-left: 25rem;
-   padding-right: 25rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    text-align: left;
   }
   
